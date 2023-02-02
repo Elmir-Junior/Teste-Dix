@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Teste-Dix
 =======
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
@@ -68,3 +69,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 >>>>>>> d7b15be (First Commit)
+=======
+- Projeto Teste de Cadastro e Gerenciamento de Noticias(CRUD)
+- Gerenciamento de Usuarios incluso(Roles e Permissions)
+- Dashboard Usada: White Dashboard (https://www.creative-tim.com/product/white-dashboard-laravel)
+Login:
+<p>admin@white.com - secret</p>
+>>>>>>> dcbbaf6 (Update README.md)
