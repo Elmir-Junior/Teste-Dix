@@ -1,4 +1,4 @@
-@extends('layouts.app', ['pageSlug' => 'news'])
+@extends('layouts.app', ['pageSlug' => 'users'])
 @section('content')
 
 <div class="row">
@@ -41,7 +41,7 @@
                                             <i class="fas fa-ellipsis-v"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <a class="dropdown-item" href="{{ route('user.edit', $user->id) }}">Editar</a>
+                                            <a class="dropdown-item" href="{{ route('user.edit', ['user' =>$user]) }}">Editar</a>
                                         </div>
                                     </div>
                                 </td>

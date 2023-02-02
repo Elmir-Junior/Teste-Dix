@@ -20,38 +20,38 @@
 
                 <table class="table table-striped">
                     <caption><strong>N. Registros: {{ $roles->count() }}</strong></caption>
-                      <thead class="text-primary">
+                    <thead class="text-primary">
                         <tr>
-                          <th scope="col">Nome</th>
-                          <th scope="col">Dt. de Criação</th>
-                          <th scope="col" style="width: 120px">Ações</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Dt. de Criação</th>
+                            <th scope="col" style="width: 120px">Ações</th>
                         </tr>
-                      </thead>
-                      <tbody>
-                          @foreach ($roles as $role)
-                            <tr>
-                                <td>{{ $role->name }}</td>
-                                <td>{{ $role->created_at }}</td>
-                                <td class="btn-toolbar">
-                                    <div class="btn-group mr-1">
-                                        <a href="{{ route('roles.show', $role->id) }}" class="btn btn-info btn-sm btn-round btn-icon">
-                                            <i class="fas fa-eye"></i>
-                                        </a>
-                                    </div>
-                                    <div class="btn-group mr-1">
-                                        <a href="{{ route('roles.edit', ['role' => $role]) }}" class="btn btn-success btn-sm btn-round btn-icon">
-                                            <i class="fas fa-tools"></i>
-                                        </a>
-                                    </div>
-                                    <div class="btn-group">
-                                            <a type="button" href="{{ route('roles.delete', ['id' => $role->id]) }}" rel="tooltip" class="btn-delete btn btn-danger btn-sm btn-round btn-icon">
-                                                <i class="fas fa-trash"></i>
-                                            </a>
-                                    </div>
-                                </td>
-                            </tr>
-                          @endforeach
-                      </tbody>
+                    </thead>
+                    <tbody>
+                        @foreach ($roles as $role)
+                        <tr>
+                            <td>{{ $role->name }}</td>
+                            <td>{{ $role->created_at }}</td>
+                            <td class="btn-toolbar">
+                                <div class="btn-group mr-1">
+                                    <a href="{{ route('roles.show', $role->id) }}" class="btn btn-info btn-sm btn-round btn-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-group mr-1">
+                                    <a href="{{ route('roles.edit', ['role' => $role]) }}" class="btn btn-success btn-sm btn-round btn-icon">
+                                        <i class="fas fa-tools"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-group">
+                                    <a type="button" href="{{ route('roles.delete', $role->id) }}" rel="tooltip" class="btn-delete btn btn-danger btn-sm btn-round btn-icon">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
                 </table>
             </div>
             <div class="card-footer py-4">

@@ -7,7 +7,7 @@
             <div class="card-header">
                 <h5 class="title">Editar Perfil</h5>
             </div>
-            <form method="post" action="{{ route('user.update', ['user' => $user->id]) }}" enctype="multipart/form-data">
+            <form method="post" action="{{ route('user.update', ['user' => $user]) }}" enctype="multipart/form-data">
                 <div class="card-body">
                     @csrf
                     @method('PUT')
