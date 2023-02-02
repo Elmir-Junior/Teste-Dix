@@ -25,9 +25,10 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {	
 	Route::resource('news', NewsController::class);
 	Route::resource('user', UserController::class);
+	
 	Route::resource('permissions', PermissionsController::class);
 	Route::resource('roles', RoleController::class);
-
+	
 	Route::get('news/delete/{id}', ['as' => 'news.delete', 'uses' => 'App\Http\Controllers\NewsController@delete']);
 	
 	Route::get('user', ['as' => 'user.index', 'uses' => 'App\Http\Controllers\UserController@index']);
@@ -36,13 +37,7 @@ Route::group(['middleware' => 'auth'], function () {
 	
 	Route::get('permissions/create', ['as' => 'permissions.create', 'uses' => 'App\Http\Controllers\Admin\PermissionsController@create']);
 	Route::get('permissions/delete/{id}', ['as' => 'permissions.delete', 'uses' => 'App\Http\Controllers\Admin\PermissionsController@delete']);
-	Route::get('roles/delete/{id}', ['as' => 'roles.delete', 'uses' => 'App\Http\Controllers\Admin\RoleController@delete']);
-
 	Route::post('permissions/destroy{id}', ['as' => 'permissions.destroy', 'uses' => 'App\Http\Controllers\Admin\PermissionsController@destroy']);
-
-	
-
-
 
 });
 

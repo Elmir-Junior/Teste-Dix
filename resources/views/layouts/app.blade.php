@@ -35,8 +35,6 @@
                 @endif
                 @yield('content')
             </div>
-
-            @include('layouts.footer')
         </div>
     </div>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -93,8 +91,6 @@
     
     <script src="{{ asset('white') }}/js/white-dashboard.min.js?v=1.0.0"></script>
     <script src="{{ asset('white') }}/js/theme.js"></script>
-
-    @stack('js')
 
     @stack('js')
 </body>
