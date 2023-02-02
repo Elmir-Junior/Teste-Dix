@@ -15,8 +15,17 @@ class NewsController extends Controller
 
     public function index()
     {
+        $search = request('search');
         $user = auth()->user();
-        $news = News::where('user_id', $user->id)->get();
+
+        if ($search) {
+            $news =
+                News::where('titulo', 'like', '%' . $search . '%')
+                ->where('user_id', $user->id)->get();
+        } else
+            $news = News::where('user_id', $user->id)->get();
+
+
         return view('news.index', ['news' => $news]);
     }
 
@@ -54,7 +63,7 @@ class NewsController extends Controller
 
     public function show(News $news)
     {
-        return view('news.show', ['news'=>$news]);
+        return view('news.show', ['news' => $news]);
     }
 
     public function edit(News $news)

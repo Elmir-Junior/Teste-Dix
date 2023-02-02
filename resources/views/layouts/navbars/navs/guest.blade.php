@@ -18,11 +18,6 @@
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                    <a href="{{ route('register') }}" class="nav-link">
-                        <i class="tim-icons icon-laptop"></i> Registrar
-                    </a>
-                </li>
-                <li class="nav-item ">
                     <a href="{{ route('login') }}" class="nav-link">
                         <i class="tim-icons icon-single-02"></i> Logar
                     </a>

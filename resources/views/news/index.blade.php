@@ -1,6 +1,8 @@
 @extends('layouts.app', ['pageSlug' => 'news'])
 @section('content')
-
+<form action="/" method=GET>
+        <input type="text" id="search" name="search" class="form-control" placeholder="Procurar Noticias">
+    </form>
 <div class="container">
     <div class="row">
         @foreach($news as $new)

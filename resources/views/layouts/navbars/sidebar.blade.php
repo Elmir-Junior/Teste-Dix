@@ -12,12 +12,15 @@
             </li>
 
             {{-- Gerenciamento --}}
+            @role('Super Admin')
             <li>
                 <a data-toggle="collapse" href="#collapseGerenciamento" aria-expanded="false" class="collapsed">
                     <i class="fas fa-users-cog"></i>
                     <span class="nav-link-text">Gerenciamento</span>
                     <b class="caret mt-1"></b>
                 </a>
+
+
                 <div class="collapse" id="collapseGerenciamento" style="">
                     <ul class="nav pl-4">
                         <li class="active ">
@@ -42,6 +45,7 @@
                         </li>
                     </ul>
                 </div>
+                @endrole
             </li>
         </ul>
     </div>

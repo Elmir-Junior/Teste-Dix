@@ -13,10 +13,6 @@ class RoleController extends Controller
     public function __construct() 
     {
         $this->middleware('role:Super Admin');
-        $this->middleware('permission:admin_create', ['only' => ['create', 'store']]);
-        $this->middleware('permission:admin_edit', ['only' => ['edit', 'update']]);
-        $this->middleware('permission:admin_view', ['only' => ['show', 'index']]);
-        $this->middleware('permission:admin_delete', ['only' => ['destroy']]);
     }
 
     /**

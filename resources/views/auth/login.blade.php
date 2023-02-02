@@ -29,11 +29,6 @@
                 </div>
                 <div class="card-footer">
                     <button type="submit" href="" class="btn btn-lg btn-block mb-3">Logar</button>
-                    <div class="pull-left">
-                        <h6>
-                            <a href="{{ route('register') }}" class="link footer-link">Criar Conta</a>
-                        </h6>
-                    </div>
                 </div>
             </div>
         </form>
