@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="btn-group mr-1">
                                     <a href="{{ route('roles.edit', ['role' => $role]) }}" class="btn btn-success btn-sm btn-round btn-icon">
-                                        <i class="fas fa-tools"></i>
+                                        <i class="bi bi-tools"></i>
                                     </a>
                                 </div>
                                 <div class="btn-group">
